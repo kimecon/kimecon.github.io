@@ -19,10 +19,33 @@
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;</p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Home — Dongwoo (Don) Kim&lt;/title&gt;</p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="style.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Extra styling for profile photo */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 280px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: start;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.profile-pic {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 280px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 6px 18px rgba(0,0,0,0.12);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media(max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero-grid {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.profile-pic {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
 <p class="p1">&lt;body&gt;</p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Header --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- (insert shared header here, mark Home link with class="active") --&gt;</p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
 <p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
 <p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="brand" href="index.html"&gt;</p>
@@ -42,10 +65,18 @@
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
 <p class="p2"><br></p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;main&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;Welcome!&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;I am an Assistant Professor in the Department of Economics at the University of Memphis. My primary fields are &lt;strong&gt;labor economics&lt;/strong&gt; and &lt;strong&gt;health economics&lt;/strong&gt;.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="muted"&gt;Explore my &lt;a href="research.html"&gt;research&lt;/a&gt;, &lt;a href="teaching.html"&gt;teaching&lt;/a&gt;, and &lt;a href="cv.html"&gt;curriculum vitae&lt;/a&gt;.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card hero-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Text --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Welcome!&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;I am an Assistant Professor in the Department of Economics at the University of Memphis. My primary fields are &lt;strong&gt;labor economics&lt;/strong&gt; and &lt;strong&gt;health economics&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="muted"&gt;Explore my &lt;a href="research.html"&gt;research&lt;/a&gt;, &lt;a href="teaching.html"&gt;teaching&lt;/a&gt;, and &lt;a href="cv.html"&gt;curriculum vitae&lt;/a&gt;.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Profile Picture --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src=“kim_dongwoo.jpg" alt="Dongwoo Kim" class="profile-pic"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
 <p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
 <p class="p2"><br></p>
